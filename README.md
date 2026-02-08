@@ -2,7 +2,7 @@
 
 My personal portfolio website showcasing my projects, experience, and skills as a Full Stack Developer.
 
-## 🌐 [View Live Site](portfolio-new-brown-nine.vercel.app)
+## 🌐 [View Live Site](https://portfolio-new-brown-nine.vercel.app)
 
 ---
 
