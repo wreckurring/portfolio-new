@@ -1,77 +1,133 @@
-# 💼 Personal Portfolio
+# Mohit Kumar — Portfolio Website
 
-My personal portfolio website showcasing my projects, experience, and skills as a Full Stack Developer.
+Personal portfolio website built with [Gatsby](https://www.gatsbyjs.org/) and styled-components.
 
-- **[View Live Site](https://portfolio-new-brown-nine.vercel.app)**
-
----
-
-## ✨ Features
-
-- **Fully Responsive** - Optimized for mobile, tablet, and desktop
-- **Interactive UI** - Animations powered by Framer Motion
-- **Fast Performance** - Built with Vite for fast load times
+Inspired by [Brittany Chiang's v4](https://github.com/bchiang7/v4) with design tweaks inspired by [Gapur Kassym's portfolio](https://gkassym.netlify.app/).
 
 ---
 
-## 🛠️ Built With
+## 🛠 Setup & Installation
 
-- **[React](https://reactjs.org/)** - UI library
-- **[Vite](https://vitejs.dev/)** - Build tool and dev server
-- **[Tailwind CSS](https://tailwindcss.com/)** - Styling
-- **[Framer Motion](https://www.framer.com/motion/)** - Animations
+### Prerequisites
+- Node.js v18+ (use [nvm](https://github.com/nvm-sh/nvm))
+- npm or yarn
 
----
-
-## 🚀 Running Locally
+### 1. Install dependencies
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/portfolio.git
-
-# Navigate to directory
-cd portfolio
-
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
+# or
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Start the development server
 
----
-
-## 📝 Project Structure
-
-```
-src/
-├── components/     # Reusable UI components
-├── sections/       # Main page sections
-├── data/          # Project and experience data
-├── hooks/         # Custom React hooks
-└── styles/        # Global styles and Tailwind config
+```bash
+npm start
+# or
+gatsby develop
 ```
 
----
+Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-## 📬 Contact
+### 3. Build for production
 
-Feel free to reach out if you'd like to collaborate or just want to connect!
+```bash
+npm run build
+```
 
-- **Email**: mohitkr.541@gmail.com
-- **LinkedIn**: [linkedin.com/in/mohitkumar143](https://linkedin.com/in/mohitkumar143)
-- **GitHub**: [@wreckurring](https://github.com/wreckurring)
+### 4. Preview production build
 
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+```bash
+npm run serve
+```
 
 ---
 
-<div align="center">
-  <sub>Built with ❤️ and </> by MkR</sub>
-</div>
+## Project Structure
+
+```
+mohit-portfolio/
+├── src/
+│   ├── components/
+│   │   ├── sections/
+│   │   │   ├── hero.js          ← Landing hero section
+│   │   │   ├── about.js         ← About me + skills
+│   │   │   ├── experience.js    ← Work/activity tabs
+│   │   │   ├── projects.js      ← Project cards grid
+│   │   │   ├── achievements.js  ← Stats/achievement cards
+│   │   │   └── contact.js       ← Contact CTA
+│   │   ├── layout.js            ← Page layout wrapper
+│   │   ├── nav.js               ← Fixed navigation bar
+│   │   ├── social.js            ← Left sidebar social links + right email
+│   │   ├── footer.js            ← Footer
+│   │   ├── loader.js            ← Intro animation loader
+│   │   └── head.js              ← SEO/Helmet
+│   ├── pages/
+│   │   ├── index.js             ← Main page
+│   │   └── 404.js               ← Not found page
+│   └── styles/
+│       ├── theme.js             ← Color + font tokens
+│       └── GlobalStyle.js       ← Global CSS reset + variables
+├── static/
+│   └── resume.pdf               ← PUT YOUR RESUME HERE
+├── gatsby-config.js
+├── gatsby-browser.js
+├── gatsby-ssr.js
+└── package.json
+```
+
+---
+
+## Customization
+
+### Update your info
+All personal content is hardcoded in the section components for simplicity. Edit:
+
+- `src/components/sections/hero.js` — Name, tagline, intro paragraph
+- `src/components/sections/about.js` — Bio, skills list
+- `src/components/sections/experience.js` — Jobs/activities
+- `src/components/sections/projects.js` — Project cards
+- `src/components/sections/achievements.js` — Stats cards
+- `src/components/sections/contact.js` — Contact blurb
+
+### Add your profile photo
+Replace the `avatar-placeholder` div in `about.js` with a real `<img>` or Gatsby Image component, and place your photo in `src/images/`.
+
+### Add your resume
+Place your `resume.pdf` inside the `static/` folder. It's linked from the Nav "Resume" button.
+
+### Color palette (CSS variables in `GlobalStyle.js`)
+
+| Variable | Color |
+|---|---|
+| `--navy` | `#0a192f` |
+| `--light-navy` | `#112240` |
+| `--green` | `#64ffda` |
+| `--slate` | `#8892b0` |
+| `--lightest-slate` | `#ccd6f6` |
+
+---
+
+## Deployment
+
+### GitHub Pages
+```bash
+npm run build
+# Deploy the /public folder
+```
+
+### Netlify
+1. Connect your GitHub repo to Netlify
+2. Build command: `gatsby build`
+3. Publish directory: `public`
+
+### Vercel
+```bash
+npm i -g vercel
+vercel
+```
+
+---
+
+Original template by [Brittany Chiang](https://brittanychiang.com).
