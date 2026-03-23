@@ -81,10 +81,9 @@ const Hero = () => {
       <a href="https://www.aitpune.com/" target="_blank" rel="noreferrer">
         Army Institute of Technology, Pune
       </a>
-      , focused on building scalable backend systems, real-time applications, and
-      high-performance web infrastructure. I enjoy turning distributed systems ideas
-      into practical products, with hands-on work across Spring Boot, Node.js,
-      Redis, Kafka, and cloud-native tooling.
+      . I like building backend systems, real-time apps, and scalable web products,
+      especially when they involve clean architecture, performance work, and strong
+      engineering fundamentals.
     </p>
   );
   const five = (

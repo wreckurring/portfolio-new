@@ -188,26 +188,23 @@ const projects = [
   {
     title: 'Distributed URL Shortener',
     description:
-      'A scalable URL shortener focused on high-throughput creation and low-latency reads. Built with Redis caching, Bloom filters, PostgreSQL, and Kafka-backed analytics to reduce bottlenecks and support 10,000+ URL creations per second.',
+      'A scalable URL shortener built with Redis caching, Bloom filters, PostgreSQL, and Kafka-backed analytics. Designed to reduce bottlenecks and support 10,000+ URL creations per second.',
     tech: ['Java', 'Spring Boot', 'Redis', 'PostgreSQL', 'Kafka'],
     github: 'https://github.com/wreckurring/url-shortener',
-    external: 'https://url-shortener-demo.vercel.app',
   },
   {
     title: 'Realtime Chat System',
     description:
-      'A backend-heavy real-time chat platform built around WebSockets, JWT auth, Redis Pub/Sub, and PostgreSQL. Designed to support horizontally scaled messaging with faster history fetches, circuit breakers, and rate limiting under load.',
+      'A real-time chat platform built around WebSockets, JWT auth, Redis Pub/Sub, and PostgreSQL. It focuses on horizontally scaled messaging, faster history fetches, and reliable behavior under load.',
     tech: ['Spring Boot', 'WebSockets', 'Redis', 'PostgreSQL'],
     github: 'https://github.com/wreckurring/realtime-chat-system',
-    external: 'https://realtime-chat-system-demo.vercel.app',
   },
   {
     title: 'WreckOn',
     description:
-      'A music streaming platform project that rounds out the portfolio with a more product-focused build. It showcases frontend experience, media-centric UI work, and the ability to ship a polished end-user experience beyond purely backend systems.',
+      'A music streaming platform project that adds a more product-focused build to the portfolio. It highlights frontend work, media-centric UI, and building a polished end-user experience.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/wreckurring/WreckOn',
-    external: 'https://wreckon-demo.vercel.app',
   },
 ];
 
@@ -225,21 +222,12 @@ const GitHubIcon = () => (
   </svg>
 );
 
-const ExternalIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <title>External</title>
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-    <polyline points="15 3 21 3 21 9" />
-    <line x1="10" y1="14" x2="21" y2="3" />
-  </svg>
-);
-
 const Projects = () => (
   <StyledProjectsSection id="projects">
     <h2 className="numbered-heading">Some Things I've Built</h2>
 
     <ul className="projects-grid">
-      {projects.map(({ title, description, tech, github, external }) => (
+      {projects.map(({ title, description, tech, github }) => (
         <StyledProject key={title}>
           <div className="project-inner">
             <header>
@@ -248,16 +236,6 @@ const Projects = () => (
                   <FolderIcon />
                 </div>
                 <div className="project-links">
-                  {external && (
-                    <a
-                      href={external}
-                      className="external"
-                      aria-label="External Link"
-                      target="_blank"
-                      rel="noreferrer">
-                      <ExternalIcon />
-                    </a>
-                  )}
                   {github && (
                     <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                       <GitHubIcon />

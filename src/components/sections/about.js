@@ -164,11 +164,9 @@ const About = () => {
             </p>
 
             <p>
-              I enjoy building things that are both technically interesting and
-              genuinely useful, especially backend-heavy products involving APIs,
-              caching, real-time communication, and distributed workflows. A lot of
-              my recent work has been around making systems faster, more resilient,
-              and easier to scale.
+              Most of my interest is in backend-heavy products involving APIs,
+              caching, real-time communication, and distributed workflows. I enjoy
+              making systems faster, more resilient, and easier to scale.
             </p>
 
             <p>
