@@ -81,7 +81,6 @@ const StyledProject = styled.li`
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    align-items: flex-start;
     position: relative;
     height: 100%;
     padding: 2rem 1.75rem;
@@ -100,6 +99,7 @@ const StyledProject = styled.li`
 
   .folder {
     color: var(--green);
+
     svg {
       width: 40px;
       height: 40px;
@@ -186,25 +186,28 @@ const StyledProject = styled.li`
 
 const projects = [
   {
-    title: 'ChatFlow',
-    description:
-      'Real-time messaging backend with Spring Boot and WebSockets. Integrated Redis Pub/Sub across horizontally scaled instances. Reduced chat history latency by ~60% with read-through cache. Handles 10,000 concurrent connections validated via Apache JMeter.',
-    tech: ['Spring Boot', 'WebSockets', 'Redis', 'PostgreSQL'],
-    github: 'https://github.com/wreckurring',
-  },
-  {
-    title: 'Cyclotrack',
-    description:
-      'Real-time group cycling tracker for the college Cycling Club using MERN stack. Reduced server RAM from 512MB to 100MB (~80%) via payload debouncing. Maintained smooth 60 FPS mapping UI with state management and component memoization.',
-    tech: ['Node.js', 'React', 'WebSockets', 'Redis'],
-    github: 'https://github.com/wreckurring',
-  },
-  {
     title: 'Distributed URL Shortener',
     description:
-      'High-throughput URL shortener with Redis read-through cache and Bloom filters to eliminate DB bottlenecking. Base62 token-range allocation strategy supporting 10,000+ creations/sec. Decoupled analytics with Kafka improving read throughput by ~70%.',
+      'A scalable URL shortener focused on high-throughput creation and low-latency reads. Built with Redis caching, Bloom filters, PostgreSQL, and Kafka-backed analytics to reduce bottlenecks and support 10,000+ URL creations per second.',
     tech: ['Java', 'Spring Boot', 'Redis', 'PostgreSQL', 'Kafka'],
-    github: 'https://github.com/wreckurring',
+    github: 'https://github.com/wreckurring/url-shortener',
+    external: 'https://url-shortener-demo.vercel.app',
+  },
+  {
+    title: 'Realtime Chat System',
+    description:
+      'A backend-heavy real-time chat platform built around WebSockets, JWT auth, Redis Pub/Sub, and PostgreSQL. Designed to support horizontally scaled messaging with faster history fetches, circuit breakers, and rate limiting under load.',
+    tech: ['Spring Boot', 'WebSockets', 'Redis', 'PostgreSQL'],
+    github: 'https://github.com/wreckurring/realtime-chat-system',
+    external: 'https://realtime-chat-system-demo.vercel.app',
+  },
+  {
+    title: 'WreckOn',
+    description:
+      'A music streaming platform project that rounds out the portfolio with a more product-focused build. It showcases frontend experience, media-centric UI work, and the ability to ship a polished end-user experience beyond purely backend systems.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/wreckurring/WreckOn',
+    external: 'https://wreckon-demo.vercel.app',
   },
 ];
 
@@ -222,12 +225,21 @@ const GitHubIcon = () => (
   </svg>
 );
 
+const ExternalIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <title>External</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    <polyline points="15 3 21 3 21 9" />
+    <line x1="10" y1="14" x2="21" y2="3" />
+  </svg>
+);
+
 const Projects = () => (
   <StyledProjectsSection id="projects">
     <h2 className="numbered-heading">Some Things I've Built</h2>
 
     <ul className="projects-grid">
-      {projects.map(({ title, description, tech, github }) => (
+      {projects.map(({ title, description, tech, github, external }) => (
         <StyledProject key={title}>
           <div className="project-inner">
             <header>
@@ -236,6 +248,16 @@ const Projects = () => (
                   <FolderIcon />
                 </div>
                 <div className="project-links">
+                  {external && (
+                    <a
+                      href={external}
+                      className="external"
+                      aria-label="External Link"
+                      target="_blank"
+                      rel="noreferrer">
+                      <ExternalIcon />
+                    </a>
+                  )}
                   {github && (
                     <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                       <GitHubIcon />

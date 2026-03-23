@@ -153,37 +153,37 @@ const StyledTabContent = styled.div`
 const jobs = [
   {
     title: 'Joint Secretary',
-    company: 'CP Club, AIT Pune',
+    company: 'Competitive Programming Club, AIT Pune',
     url: 'https://www.aitpune.com/',
-    range: 'Aug 2024 – Present',
+    range: 'Aug 2024 - Present',
     html: `<ul>
-      <li>Organized 2 large-scale coding competitions (Codeft) with 3000+ participants footfall.</li>
-      <li>Lead competitive programming sessions, mentoring peers on DSA and problem-solving strategies.</li>
-      <li>Managed community outreach via the PR Cell to drive inter-college awareness and participation.</li>
-      <li>Coordinated logistics, judging, and prize distribution for hackathons and coding contests.</li>
+      <li>Organized 2 large-scale coding competitions, helping drive 3000+ total footfall across events.</li>
+      <li>Led competitive programming sessions and peer mentorship around problem solving, data structures, and contest strategy.</li>
+      <li>Worked with the student team to coordinate event execution, judging, outreach, and participant experience.</li>
+      <li>Helped grow the club's technical presence on campus through community-building and consistent programming activities.</li>
     </ul>`,
   },
   {
     title: 'Joint Secretary',
     company: 'PR Cell, AIT Pune',
     url: 'https://www.aitpune.com/',
-    range: 'Aug 2024 – Present',
+    range: 'Aug 2024 - Present',
     html: `<ul>
-      <li>Handled public relations and communication for technical events and club activities.</li>
-      <li>Produced content and outreach material to increase event visibility and registration.</li>
-      <li>Collaborated with multiple college clubs to co-host inter-disciplinary events.</li>
+      <li>Handled communication and promotion for technical events, club initiatives, and student outreach.</li>
+      <li>Created messaging and promotional material that improved event visibility and registrations.</li>
+      <li>Collaborated with different teams across campus to support larger cross-club initiatives and public-facing events.</li>
     </ul>`,
   },
   {
     title: 'Competitive Programmer',
-    company: 'Codeforces / LeetCode',
-    url: 'https://codeforces.com/profile/wreckurring',
-    range: '2022 – Present',
+    company: 'Codeforces and LeetCode',
+    url: 'https://codeforces.com/profile/alternate007',
+    range: '2022 - Present',
     html: `<ul>
       <li>Achieved Specialist rank on Codeforces with max rating of 1513.</li>
       <li>Solved 500+ problems across Codeforces and LeetCode platforms.</li>
-      <li>Competed in rated contests regularly, sharpening skills in algorithms and data structures.</li>
-      <li>Winner of 2 hackathons, selected from 500+ participating teams.</li>
+      <li>Regularly competed in rated contests, sharpening fundamentals in algorithms, data structures, and implementation speed.</li>
+      <li>Applied the same problem-solving mindset in hackathons, where I was part of teams that won 2 events from 500+ participating teams.</li>
     </ul>`,
   },
 ];
@@ -193,7 +193,7 @@ const Experience = () => {
 
   return (
     <StyledJobsSection id="experience">
-      <h2 className="numbered-heading">Where I've Worked</h2>
+      <h2 className="numbered-heading">Experience</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs">
@@ -204,7 +204,7 @@ const Experience = () => {
               onClick={() => setActiveTabId(i)}
               role="tab"
               tabIndex={activeTabId === i ? '0' : '-1'}
-              aria-selected={activeTabId === i ? true : false}>
+              aria-selected={activeTabId === i}>
               {company}
             </StyledTabButton>
           ))}

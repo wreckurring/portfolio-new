@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 const Head = ({ title, description }) => {
   const defaultTitle = 'Mohit Kumar';
   const defaultDescription =
-    'Mohit Kumar is a backend-focused software engineer and CS student at AIT Pune, specializing in distributed systems, real-time applications, and scalable infrastructure.';
+    'Mohit Kumar is a software engineer and CS student at AIT Pune focused on backend systems, scalable web applications, distributed systems, and real-time infrastructure.';
 
   return (
     <Helmet

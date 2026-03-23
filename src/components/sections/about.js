@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
@@ -125,14 +125,24 @@ const StyledPic = styled.div`
 `;
 
 const skills = [
-  'Java / Spring Boot',
-  'TypeScript / Node.js',
-  'Python / FastAPI',
-  'React / Next.js',
-  'Redis / Kafka',
-  'Docker / Kubernetes',
-  'AWS / CI/CD',
-  'PostgreSQL / SQL',
+  'Java',
+  'TypeScript',
+  'Python',
+  'C++',
+  'SQL',
+  'Spring Boot',
+  'Node.js',
+  'FastAPI',
+  'React',
+  'Next.js',
+  'Redis',
+  'Kafka',
+  'Docker',
+  'Kubernetes',
+  'AWS',
+  'CI/CD',
+  'Prometheus',
+  'WebSockets',
 ];
 
 const About = () => {
@@ -144,32 +154,35 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Mohit, a software engineer based in Pune, India with a passion for
-              building scalable backend systems and distributed infrastructure. I'm currently
-              pursuing my B.E. in Computer Science at{' '}
+              Hello! I'm Mohit, a software engineer based in Pune, Maharashtra,
+              India. I'm currently pursuing my B.E. in Computer Science at{' '}
               <a href="https://www.aitpune.com/" target="_blank" rel="noreferrer">
                 Army Institute of Technology
-              </a>{' '}
-              (CGPA: 8.57).
+              </a>
+              , where I've been spending a lot of time learning how large systems are
+              designed, scaled, and kept reliable.
             </p>
 
             <p>
-              I enjoy creating things that live on the internet — whether that's real-time
-              chat applications, distributed URL shorteners, or group tracking systems. My
-              focus is on engineering systems that are performant, resilient, and
-              production-ready.
+              I enjoy building things that are both technically interesting and
+              genuinely useful, especially backend-heavy products involving APIs,
+              caching, real-time communication, and distributed workflows. A lot of
+              my recent work has been around making systems faster, more resilient,
+              and easier to scale.
             </p>
 
             <p>
-              Beyond coding, I'm a{' '}
+              Outside of project work, I also spend a lot of time in competitive
+              programming. I'm a{' '}
               <a
-                href="https://codeforces.com/profile/wreckurring"
+                href="https://codeforces.com/profile/alternate007"
                 target="_blank"
                 rel="noreferrer">
                 Specialist on Codeforces
               </a>{' '}
-              (max rating 1513), have solved 500+ problems, won 2 hackathons, and
-              serve as Joint Secretary of the Competitive Programming Club at AIT Pune.
+              with a max rating of 1513, have solved 500+ problems across platforms,
+              won 2 hackathons, and serve as Joint Secretary of the Competitive
+              Programming Club and PR Cell at AIT Pune.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

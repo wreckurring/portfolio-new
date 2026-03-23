@@ -72,19 +72,19 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Mohit Kumar.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const three = (
+    <h3 className="big-heading">Software Engineer focused on backend systems and scalable web apps.</h3>
+  );
   const four = (
     <p>
-      I'm a backend-focused software engineer and Computer Science student at{' '}
+      I'm a software engineer and Computer Science student at{' '}
       <a href="https://www.aitpune.com/" target="_blank" rel="noreferrer">
         Army Institute of Technology, Pune
       </a>
-      . I specialize in building scalable distributed systems, real-time applications,
-      and high-performance backend infrastructure. Currently focused on{' '}
-      <strong style={{ color: 'var(--lightest-slate)' }}>
-        system design, competitive programming
-      </strong>
-      , and crafting software that makes a difference.
+      , focused on building scalable backend systems, real-time applications, and
+      high-performance web infrastructure. I enjoy turning distributed systems ideas
+      into practical products, with hands-on work across Spring Boot, Node.js,
+      Redis, Kafka, and cloud-native tooling.
     </p>
   );
   const five = (

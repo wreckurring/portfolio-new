@@ -58,7 +58,7 @@ const achievements = [
   {
     number: '500+',
     label: 'Problems Solved',
-    sub: 'LeetCode & Codeforces',
+    sub: 'LeetCode and Codeforces',
   },
   {
     number: '2x',
@@ -66,14 +66,14 @@ const achievements = [
     sub: '500+ competing teams',
   },
   {
-    number: '3000+',
-    label: 'Event Footfall',
-    sub: 'Codeft competitions organized',
+    number: '2',
+    label: 'Leadership Roles',
+    sub: 'CP Club and PR Cell',
   },
   {
-    number: '8.57',
-    label: 'CGPA',
-    sub: 'Army Institute of Technology',
+    number: '3000+',
+    label: 'Event Footfall',
+    sub: 'Coding competitions organized',
   },
   {
     number: '10k+',

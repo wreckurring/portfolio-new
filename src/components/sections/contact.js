@@ -66,10 +66,10 @@ const Contact = () => (
     <h2 className="title">Get In Touch</h2>
 
     <p>
-      I'm currently open to new opportunities — whether it's a full-time role,
-      internship, or an exciting project to collaborate on. My inbox is always open.
-      Whether you have a question or just want to say hi, I'll do my best to get
-      back to you!
+      I'm currently open to internships, full-time opportunities, and meaningful
+      collaborations where I can contribute to strong engineering teams and keep
+      growing as a backend-focused software engineer. If you think my work could be
+      a fit, feel free to reach out. I'll be happy to connect.
     </p>
 
     <a className="email-link" href="mailto:mohitkr.541@gmail.com">

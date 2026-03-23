@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Mohit Kumar',
     description:
-      'Mohit Kumar is a backend-focused software engineer studying at AIT Pune, specializing in distributed systems, real-time applications, and scalable infrastructure.',
+      'Mohit Kumar is a software engineer at AIT Pune focused on backend systems, scalable web applications, distributed systems, and real-time infrastructure.',
     siteUrl: 'https://wreckurring.github.io',
     author: 'Mohit Kumar',
   },
