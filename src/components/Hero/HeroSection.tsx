@@ -5,7 +5,7 @@ export function HeroSection() {
     <section className="site-container max-w-4xl pb-10 sm:pb-16 font-crimson text-2xl sm:text-3xl md:text-4xl tracking-tight leading-snug">
 
       <h1 className="font-medium">
-        Hi, I'm Nishant Singh
+        Hi, I'm Mohit Kumar
       </h1>
 
       {/* First Paragraph */}
@@ -40,7 +40,7 @@ export function HeroSection() {
         </span>
         where I led and
         <br className="hidden sm:block" />
-        built the product from scratch,
+        built features from scratch,
         reducing latency and AI costs.
       </p>
 
@@ -48,14 +48,14 @@ export function HeroSection() {
       <p className="font-medium mb-6 sm:mb-8">
         I've also{" "}
         <span className="bg-[#F0FDFA] text-[#0F766E] px-1 font-medium">
-          won 2 hackathons.
+          won 2 hackathons. @IIT Patna & @IISc Bangalore
         </span>
       </p>
 
       <p className="font-medium mb-6 sm:mb-8">
         On my journey, I've developed
         <span className="bg-[#FFF3DA] text-[#A85800] px-1 ml-2 font-medium mr-1">
-          full stack web & app, <br className="hidden sm:block" />
+          full stack web apps, <br className="hidden sm:block" />
           browser extensions and AI based products.
         </span>
       </p>
@@ -63,7 +63,7 @@ export function HeroSection() {
       <p className="text-sm sm:text-base md:text-2xl text-gray-800 max-w-2xl mt-6 tracking-tight leading-normal">
         I'm open for new opportunities.
         <a
-       href="mailto:prashantnishant80@gmail.com"
+       href="mailto:mohitkr.541@gmail.com"
        className="bg-[#DBEAFE] text-[#1E40AF] px-2 py-1 ml-2 font-medium rounded-md hover:bg-opacity-90 transition-colors"
      >
        Contact Me

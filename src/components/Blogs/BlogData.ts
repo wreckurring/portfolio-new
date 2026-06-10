@@ -5,7 +5,7 @@ export const blogData = [
     id: 1,
     title: "Mastering Process Management in Linux",
     description: "A complete guide to managing processes in Linux using ps, top, kill, systemctl, and more.",
-    imageUrl: "/blogs/process.webp",   // Put your image in public/blogs/
+    imageUrl: "/blogs/process.webp",
     blogUrl: "https://medium.com/@prashantnishant80/mastering-process-management-in-linux-essential-commands-and-techniques-fc75c28f6436",
     date: "2025-01-10",
     readTimeMinutes: 6,
